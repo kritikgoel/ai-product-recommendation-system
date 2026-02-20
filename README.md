@@ -59,7 +59,7 @@ streamlit run app.py
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Give it a try!!
 
 👉 https://ai-appuct-recommendation-system-kwmbrehjupikzg8laudquj.streamlit.app/
 
