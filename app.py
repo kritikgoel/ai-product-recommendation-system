@@ -3,9 +3,8 @@ from openai import OpenAI
 # OpenAI client intializing
 import os
 
-password = st.text_input("Enter Password", type="password")
-
-if password != "kritik123":
+if password != os.getenv("APP_PASSWORD"):
+    st.warning("Enter correct password")
     st.stop()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
