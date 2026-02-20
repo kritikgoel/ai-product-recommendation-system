@@ -2,6 +2,12 @@ import streamlit as st
 from openai import OpenAI
 # OpenAI client intializing
 import os
+
+password = st.text_input("Enter Password", type="password")
+
+if password != "kritik123":
+    st.stop()
+
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Fn 1: Product recommendations fetch
