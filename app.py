@@ -11,7 +11,7 @@ if password != os.getenv("APP_PASSWORD"):
     st.warning("Incorrect password")
     st.stop()
 
-
+# Call the OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Fn 1: Product recommendations fetch
