@@ -1,12 +1,14 @@
 import streamlit as st
 from openai import OpenAI
-# OpenAI client intializing
 import os
 
+# 🔐 Password Input
+password = st.text_input("Enter Password", type="password")
+
+# 🔐 Password Check
 if password != os.getenv("APP_PASSWORD"):
     st.warning("Enter correct password")
     st.stop()
-
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Fn 1: Product recommendations fetch
