@@ -74,4 +74,4 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-Made by Kritik ❤️
+Made by Kritik with ❤️
